@@ -10,7 +10,7 @@ const About = () => {
           alt="Profile"
           className="profile-picture"
         />
-        <h2 className="name">Your Name</h2>
+        <h2 className="name">Taebin Sung</h2>
         <p className="intro">
           Hello! I'm a software developer specializing in building (and
           occasionally designing) exceptional digital experiences.
