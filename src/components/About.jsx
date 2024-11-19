@@ -12,8 +12,7 @@ const About = () => {
         />
         <h2 className="name">Taebin Sung</h2>
         <p className="intro">
-          Hello! I'm a software developer specializing in building (and
-          occasionally designing) exceptional digital experiences.
+          Hi there! I'm a UBC mathematics major student
         </p>
       </div>
     </div>

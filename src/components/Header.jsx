@@ -5,7 +5,7 @@ import "./App.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="logo">My Portfolio</h1>
+      <h1 className="logo">Portfolio</h1>
       <nav className="nav">
         <Link to="/" className="nav-link">About</Link>
         <Link to="/portfolio" className="nav-link">Portfolio</Link>

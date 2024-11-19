@@ -90,10 +90,17 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
+  cursor: pointer;
+  display: block;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+/* Style the link to remove text decorations */
+.project-card a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
 }
 
 /* Footer */
