@@ -1,113 +1,97 @@
-/* General Styles */
+/* General Reset */
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  font-family: "Playfair Display", sans-serif;
+  background-color: darkslategrey;
 }
 
-/* App Container */
-.app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Header */
+/* Header Styling */
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #1f1f1f;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: black;
+  padding-left: 50px;
+  justify-content: left;
 }
 
-.logo {
-  font-size: 1.5rem;
-  color: #ffffff;
+/* Footer Styling */
+.footer {
+  position: absolute;
+  left: 1110px;
+  top: 385px;
+  font-size: 25px;
+  font-style: oblique;
+  font-weight: 700;
+  color: rgb(70, 75, 80);
 }
 
-.nav {
+/* Center Container Styling */
+.center-container {
   display: flex;
-  gap: 1.5rem;
+  flex: 1;
+  justify-content:center;
+  align-items: center;
+  gap: 2px;
+  padding: 50px 100px;
+  background: radial-gradient(circle, rgba(95, 95, 95, 0.1) 60%, rgba(0, 0, 0, 0.2) 120%);
+  box-shadow: 0 0 20px 10px rgba(30, 54, 54, 0.6);
+  border-radius: 20px;
 }
 
-.nav-link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.nav-link:hover {
-  color: #76c7c0;
-}
-
-/* About Page */
-.about {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.profile {
+/* Vertical Stack (Shared Styling) */
+.vertical-stack,
+.vertical-stack-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-}
-
-.profile-picture {
-  border-radius: 50%;
-  border: 3px solid #76c7c0;
-}
-
-.name {
-  font-size: 2rem;
-}
-
-.intro {
-  font-size: 1.2rem;
-  max-width: 600px;
-}
-
-/* Portfolio Page */
-.portfolio {
-  padding: 3rem 1rem;
   text-align: center;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.project-card {
-  background-color: #1f1f1f;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
+  border-radius: 20px;
   cursor: pointer;
-  display: block;
+  padding: 10px;
+  line-height: 1;
+  font-size: 1.5rem;
+  height: 200px;
+  color: rgba(17, 9, 5, 0.6);
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-}
-/* Style the link to remove text decorations */
-.project-card a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit color from parent */
+.vertical-stack {
+  flex-direction: column;  /* Set the flex direction to column */
+  justify-content: center; /* Center the element vertically */
+  align-items: center;     /* Center the element horizontally */
 }
 
-/* Footer */
-.footer {
+.vertical-stack-page {
+  justify-content: center; /* Center the element vertically */
+  align-items: center;     /* Center the element horizontally */
+  position: relative;
+  /* top: -23px; */
+}
+
+/* Bold Name Styling */
+.bold-name,
+.bold-name-select {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding-top: 0;
+  position: relative;
+}
+
+/* Vertical Text Styling */
+.vert-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem; /* Default size */
+  color: rgba(17, 9, 5, 0.6);
+  /* transition: font-size 0.3s ease, transform 0.3s ease; */
+}
+
+.hidden-vert-text {
+  display: none; /* Hide the text initially */
   text-align: center;
-  padding: 1rem;
-  background-color: #1f1f1f;
-  color: #ffffff;
-  font-size: 0.9rem;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.vertical-stack-page:hover .hidden-vert-text {
+  display: inline-block;
+  transition: opacity 0.3s ease; /* Smooth opacity transition */ 
 }
